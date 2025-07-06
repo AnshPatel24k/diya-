@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Sorry, Diya 💔</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      color: #e91e63;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 20px 30px;
+    }
+    .heart {
+      font-size: 4em;
+      animation: heartbeat 1s infinite;
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .button {
+      background-color: #e91e63;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+    .button:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">💔</div>
+  <h1>I'm Sorry, Diya</h1>
+  <p>
+    I know I messed up, and I can't express how bad I feel.<br>
+    You're someone so special to me, and hurting you was the last thing I ever wanted.<br>
+    Please forgive me. Let’s talk, let’s fix this... together. 💖
+  </p>
+
+  <button class="button" onclick="document.getElementById('audio').play()">🎵 Play Song</button>
+  <a class="button" href="#">I Love Diyaaaaa 🥺</a>
+
+  <audio id="audio" loop>
+    <source src="/Ik Lamha (PenduJatt.Com.Se).mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
